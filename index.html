@@ -1,61 +1,69 @@
 <!--
-
     ©️ 2025 Eiser
-
     written by Eiser
-
     UPDATE:
     - For u, maddy cantik
 -->
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Love Letter Effect by Eiser</title>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="title" content="Love letter effect | Eiser">
-        <meta name="description" content="A love letter effect made by Eiser">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Love letter effect | Eiser">
+    <meta name="description" content="A love letter effect made by Eiser">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js"></script>
+    <title>Love Letter Effect by Eiser</title>
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    <!-- Markdown-it -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js"></script>
 
-            body {
-                font-family: 'Inter', sans-serif;
-            }
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
-            h1, h2, h3, h4, h5, h6 {
-                margin: 0;
-            }
+    <!-- Fonts & Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-            #message-container {
-                background-color: oklch(78.33% 0.108 326.54);
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.455);
-                
-                transition: height 1.5s ease-in-out;
-            }
-        </style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff;
+        }
 
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div class="flex justify-center items-center flex-col w-[100vw] h-[100vh]">
-            <div id="message-container" class="flex-col items-center hidden h-0 overflow-y-hidden max-h-[80vh] max-w-[50vw] max-md:max-w-[70vw] max-sm:max-w-[80vw] max-sm:max-h-[80vh] py-5">
-                <div class="w-[90%] mb-auto mt-auto">
-                    <article id="message" class="prose"></article>
-                </div>
-            </div>
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
 
-            <div class="heart-container" class="mt-2">
-                <i id="solid-heart" class="fa-solid fa-heart fa-beat fa-2x" style="color: #ff0000;"></i>
-            </div>
+        #message-container {
+            background-color: oklch(78.33% 0.108 326.54);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.455);
+            transition: height 1.5s ease-in-out;
+        }
+    </style>
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+</head>
+<body class="flex justify-center items-center flex-col w-screen h-screen">
+
+    <div id="message-container" 
+         class="flex flex-col items-center hidden h-0 overflow-y-hidden 
+                max-h-[80vh] max-w-[50vw] max-md:max-w-[70vw] 
+                max-sm:max-w-[80vw] max-sm:max-h-[80vh] py-5">
+        <div class="w-[90%] mb-auto mt-auto">
+            <article id="message" class="prose"></article>
         </div>
-    </body>
+    </div>
+
+    <div class="heart-container mt-2">
+        <i id="solid-heart" class="fa-solid fa-heart fa-beat fa-2x" style="color: #ff0000;"></i>
+    </div>
+
+</body>
 </html>
